@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ fontName }}</title>
+    <style>
+
+        @import url("http://fonts.googleapis.com/css?family=Nixie+One");
+
+        body {
+            font-family: 'Nixie One', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            padding-bottom: 100px;
+            background-color: #e16544;
+            background-image: -moz-linear-gradient(20deg, rgba(243, 56, 150, .6), rgba(243, 184, 56, .6));
+            background-image: -webkit-linear-gradient(20deg, rgba(243, 56, 150, .6), rgba(243, 184, 56, .6));
+            background-image: -o-linear-gradient(20deg, rgba(243, 56, 150, .6), rgba(243, 184, 56, .6));
+            background-image: -ms-linear-gradient(20deg, rgba(243, 56, 150, .6), rgba(243, 184, 56, .6));
+            background-image: linear-gradient(20deg, rgba(243, 56, 150, .6), rgba(243, 184, 56, .6));
+        }
+
+        .preview, .label {
+            -webkit-transition: color .2s, background .2s;
+            -moz-transition: color .2s, background .2s;
+            -ms-transition: color .2s, background .2s;
+            -o-transition: color .2s, background .2s;
+            transition: color .2s, background .2s;
+        }
+
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 5px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .preview .inner {{ baseTag }} {
+            line-height: 80px;
+            font-size: 50px;
+        }
+
+        h1, {{ baseTag }} {
+            -webkit-text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+            -moz-text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+            text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, .5);
+        }
+
+        .preview:hover {
+            background: rgba(255, 255, 255, .1);
+        }
+
+        .preview:hover .label {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        footer {
+            position: fixed;
+            padding: 20px;
+            left: 0;
+            bottom: 0;
+            box-sizing: border-box;
+            width: 100%;
+            background: rgba(0, 0, 0, .9);
+            color: rgba(255, 255, 255, .6);
+        }
+
+        a, .heart {
+            color: #e96132;
+            text-decoration: none;
+        }
+
+        footer img {
+            height: 25px;
+            margin: -7px 0 -7px 5px;
+        }
+
+        .page {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 2;
+        }
+
+        {{{ styles }}}
+
+    </style>
+</head>
+<body>
+
+    <div class="page">
+
+        <h1>Tech icons set</h1>
+
+        {{# each names }}
+
+            <div class="preview">
+                <span class="inner">
+                    <{{ ../baseTag }} class="{{ ../classPrefix }}{{ this }}"></{{ ../baseTag }}>
+                </span>
+                <br>
+                <span class='label'>{{ this }}</span>
+            </div>
+
+        {{/ each }}
+
+        <footer>
+
+            <div class="credits">
+                Made with 
+                <span class="heart">&#10084;</span>
+                 by 
+                <a href="https://www.workshape.io", target="_blank"><img src="https://www.workshape.io/images/logo/header.svg"></a>
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
