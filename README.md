@@ -1,6 +1,6 @@
 ## Tech icons set
 
-!(Icon set preview)[http://i.cubeupload.com/HnFzZG.png]
+![Icon set preview](http://i.cubeupload.com/HnFzZG.png)
 
 > A collection of SVG icons representing programming languages, frameworks, technologies and skills, ready-built as a web font
 
