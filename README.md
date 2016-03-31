@@ -4,6 +4,8 @@
 
 > A collection of SVG icons representing programming languages, frameworks, technologies and skills, ready-built as a web font
 
+View the full set [here](http://workshape.github.io/tech-icons/index.html)
+
 #### Download
 
 You can use the ready-built webfont by copying the build in the `dist` folder over to your project and importing `icons.css` into your HTML.
