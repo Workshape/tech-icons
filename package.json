@@ -6,7 +6,7 @@
     "build": "icon-font-generator icons/*.svg -o dist --htmltp template/index.hbs -p icon-tech"
   },
   "author": "Tancredi Trugenberger",
-  "license": "ISC",
+  "license": "MIT",
   "description": "An icon-font for tech skills",
   "devDependencies": {
     "icon-font-generator": "^1.0.2"
