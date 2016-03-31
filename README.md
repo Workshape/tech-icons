@@ -35,7 +35,3 @@ The `dist` directory gets built using [icon-font-generator](https://github.com/W
 #### Contribute
 
 We'd love to add more icons to the set - pull requests are welcome!
-
-#### License
-
-Copyright (c) 2014 Workshape.io Ltd. - Released under the [MIT license](https://github.com/Workshape/tech-icons/blob/master/LICENSE)
